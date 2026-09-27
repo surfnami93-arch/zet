@@ -1,0 +1,19 @@
+[package]
+name = "zet"
+version = "0.1.0"
+edition = "2024"
+build = "build.rs"
+authors = ["surfn <surfnami93@gmail.com>"]
+description = "自作のRust製CLIシェル 最初の初期設定で起動した際に入力することで定位置まで自動で移動することができます"
+
+[dependencies]
+portable-pty = "0.8"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+num2words = "1"
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.59", features = ["Win32_System_Console"] }
+
+[build-dependencies]
+winres = "0.1"

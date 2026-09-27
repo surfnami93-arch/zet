@@ -1,0 +1,11 @@
+{
+  "commands": [
+    "ssh ubuntu@160.16.149.20",
+    "mysql -u appuser -p",
+    "Mizuho81901!",
+    "USE users"
+  ],
+  "variables": {
+    "legacy_start": "true"
+  }
+}
